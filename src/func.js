@@ -1,9 +1,20 @@
-function sequence(n){
-  const array =[];
-  for(let i=1; i<=n; i++){
+function sequence(n) {
+  const array = [];
+  for (let i = 1; i <= n; i++) {
    array.push(i);
   }
-   return array;
+  return array;
 };
 
-module.exports = {sequence};
+function sum(array) {
+  let sum = 0;
+  for (const n of array) {
+    sum += n;
+  }
+  return sum;
+};
+
+module.exports = {
+  sequence,
+  sum
+};
